@@ -33,3 +33,6 @@ COPY \build\HelloGreeting.war  C:\programdata\tomcat9\webapps
 #Reboot tomcat server
 RUN powershell stop-service Tomcat9 
 RUN powershell start-service Tomcat9 
+
+#Keep the container active after creation
+CMD [ "cmd" ]
